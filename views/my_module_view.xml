@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+
+    
+    <record id="my_module_view_tree" model="ir.ui.view">
+        <field name="name">my_module.list.view</field>
+        <field name="model">my_module.model</field>
+        <field name="arch" type="xml">
+            <tree string="Tests">
+                <field name="name"/>
+                <field name="email" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="my_module_type_action" model="ir.actions.act_window">
+        <field name="name">My module</field>
+         <field name="type">ir.actions.act_window</field>
+        <field name="res_model">my_module.model</field>
+
+        <field name="view_mode">tree,form</field>
+
+    </record>
+</odoo>
